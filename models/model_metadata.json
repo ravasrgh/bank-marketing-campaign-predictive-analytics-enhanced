@@ -1,0 +1,64 @@
+{
+  "model_name": "LightGBM",
+  "resampler_name": "ROS",
+  "best_params": {
+    "clf__learning_rate": 0.03161968666713354,
+    "clf__max_depth": 8,
+    "clf__n_estimators": 58,
+    "clf__subsample": 0.908897907718663
+  },
+  "threshold_deployment": 0.4,
+  "threshold_profit_optimal": 0.33,
+  "threshold_f2_optimal": 0.49,
+  "test_metrics": {
+    "f2": 0.581263038118718,
+    "recall": 0.6605603448275862,
+    "precision": 0.39269698910954515,
+    "roc_auc": 0.8164759215219977,
+    "pr_auc": 0.4684724786064039
+  },
+  "deployment_threshold_metrics": {
+    "calls": 2177.0,
+    "calls_pct_database": 26.432734337056825,
+    "precision": 0.3100597152044097,
+    "recall": 0.7273706896551724,
+    "f2": 0.5731023942944473,
+    "profit_rp": 102150000.0
+  },
+  "profit_optimal_threshold_metrics": {
+    "calls": 4253.0,
+    "calls_pct_database": 51.63914521612433,
+    "precision": 0.18669174700211616,
+    "recall": 0.8556034482758621,
+    "profit_rp": 117350000.0
+  },
+  "categorical_cols": [
+    "job",
+    "marital",
+    "education",
+    "default",
+    "housing",
+    "loan",
+    "contact",
+    "month",
+    "day_of_week",
+    "poutcome"
+  ],
+  "numeric_cols": [
+    "age",
+    "campaign",
+    "previous",
+    "emp.var.rate",
+    "cons.price.idx",
+    "cons.conf.idx",
+    "euribor3m",
+    "nr.employed",
+    "was_contacted_before"
+  ],
+  "cost_framework": {
+    "tp_rp": 450000,
+    "tn_rp": 0,
+    "fp_rp": -50000,
+    "fn_rp": -500000
+  }
+}
